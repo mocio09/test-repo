@@ -15,6 +15,7 @@ jobs:
       - name: Build
         run: |
           echo "Building the project..."
+          echo $GITHUB_REF
           # Add your build commands here
 
   test_new:
@@ -28,4 +29,5 @@ jobs:
       - name: Run Tests
         run: |
           echo "Running tests..."
+          echo $GITHUB_REF
           # Add your test commands here
