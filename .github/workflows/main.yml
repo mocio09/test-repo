@@ -2,8 +2,6 @@ name: Build and Test
 
 on:
   push:
-    #branches:
-    #  - main
 
 jobs:
   build:
@@ -20,16 +18,7 @@ jobs:
           echo $GITHUB_REF
           # Add your build commands here
 
-  test:
-    name: Test Job
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Run Tests
         run: |
           echo "Running tests..."
-          echo $GITHUB_REF
           # Add your test commands here

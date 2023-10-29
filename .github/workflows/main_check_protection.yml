@@ -15,19 +15,10 @@ jobs:
       - name: Build
         run: |
           echo "Building the project..."
-          echo $GITHUB_REF
+          ls -la
           # Add your build commands here
-
-  test_new:
-    name: Test Job2
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
 
       - name: Run Tests
         run: |
           echo "Running tests..."
-          echo $GITHUB_REF
           # Add your test commands here
