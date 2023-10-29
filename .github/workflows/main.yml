@@ -1,0 +1,33 @@
+name: Build and Test
+
+on:
+  push:
+    #branches:
+    #  - main
+
+jobs:
+  build:
+    name: Build Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          echo "Building the project..."
+          # Add your build commands here
+
+  test:
+    name: Test Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Tests
+        run: |
+          echo "Running tests..."
+          # Add your test commands here
