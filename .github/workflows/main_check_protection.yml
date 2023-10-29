@@ -15,7 +15,8 @@ jobs:
       - name: Build
         run: |
           echo "Building the project..."
-          ls -la
+          cat main.py
+          cat service.py
           # Add your build commands here
 
       - name: Run Tests
