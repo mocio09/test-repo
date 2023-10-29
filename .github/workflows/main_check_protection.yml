@@ -4,8 +4,8 @@ on:
   push:
 
 jobs:
-  build:
-    name: Build Job
+  build_new:
+    name: Build Job2
     runs-on: ubuntu-latest
 
     steps:
@@ -17,8 +17,8 @@ jobs:
           echo "Building the project..."
           # Add your build commands here
 
-  test:
-    name: Test Job
+  test_new:
+    name: Test Job2
     runs-on: ubuntu-latest
 
     steps:
