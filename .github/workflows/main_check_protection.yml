@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: custom-branch
+          ref: main
 
       - name: Build
         run: |
