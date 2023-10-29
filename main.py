@@ -1,1 +1,1 @@
-# this is an example of awesome feature 1
+# this is an example of test feature 2
