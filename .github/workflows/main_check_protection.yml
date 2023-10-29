@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "Building the project..."
           cat main.py
-          cat service.py
+          cat service2.py
           # Add your build commands here
 
       - name: Run Tests
