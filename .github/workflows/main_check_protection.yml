@@ -30,3 +30,8 @@ jobs:
         run: |
           echo "Running tests..."
           # Add your test commands here
+
+
+# Option1: An action when the PR is merged to master to query all the labels 
+
+# Option2: Service account to approve the PR, everytime a pr is merged to master
