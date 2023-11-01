@@ -19,4 +19,4 @@ jobs:
     - name: show token
       id: show_token
       run: |
-        echo {{ steps.get_workflow_token.outputs.token }}
+        echo ${{ steps.get_workflow_token.outputs.token }}
