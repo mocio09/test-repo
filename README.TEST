@@ -1,0 +1,6 @@
+Strategy:
+
+- In jenkins you always have the latest version of the build pipeline for 'main'
+- When a push is made on 'main' branch or a PR is created/updated trigger a workflow that queries the jenkins server
+  for the last 'main' build.
+- Iterate over all pull requests open in github repo and add a pass/fail check or add a comment by a bot to approve or require changes 
