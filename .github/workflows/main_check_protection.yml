@@ -22,7 +22,7 @@ jobs:
           echo "Building the project..."
           cat main.py
           cat service2.py
-          echo "The ref is ${{ github.event }}"
+          echo "The ref is ${{ toJson(github.event) }}"
           # Add your build commands here
 
       - name: Run Tests
